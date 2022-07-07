@@ -6,11 +6,36 @@
     <title>Demo</title>
   </head>
   <body>
-    <a href="http://jqeury.com">jQuery</a>
+    <div>
+    <a href="https://jquery.com/">jQuery</a>
+    </div>
+    <div>
+    <a href="document.html"> Document viewer </a>
+    </div>
     <script src="jquery.js"></script>
     <script>
 
-    // Your code goes here.
+    // $ vs $()
+    1 | $( "h1" ).remove();
+
+    // A $( document ).ready() block.
+    $( document ).ready(function() {
+      console.log( "ready!" );
+    });
+
+    // Shorthand for $( document ).ready()
+    $(function() {
+      console.log( "ready!" );
+    });
+
+    // Passing a named function instead of an anonymous function.
+    function readyFn( jQuery ) {
+      // Code to run when the document is ready.
+    }
+
+    $( document ).ready( readyFn );
+    // or:
+    $( window ).on( "load", readyFn );
 
     </script>
   </body>
