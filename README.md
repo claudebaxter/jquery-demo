@@ -1,4 +1,4 @@
-# room-renter
+# jquery-demo
 
 This is a jQuery demo page for testing the <strong>jQuery library features</strong>..
 
